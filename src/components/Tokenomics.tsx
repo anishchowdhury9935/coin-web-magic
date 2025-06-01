@@ -19,7 +19,7 @@ const Tokenomics = () => {
             Tokenomics
           </h2>
           <p className="text-xl text-white/80 max-w-2xl mx-auto">
-            Fair and transparent distribution designed to benefit the entire CrocElephant community!
+            Fair and transparent distribution designed to benefit the entire ELECROCK community!
           </p>
         </div>
         
@@ -56,7 +56,7 @@ const Tokenomics = () => {
                 <div className="space-y-3">
                   <div className="flex justify-between">
                     <span className="text-white/70">Total Supply:</span>
-                    <span className="text-white font-semibold">1,000,000,000 $CROCELEPHANT</span>
+                    <span className="text-white font-semibold">1,000,000,000 $ELECROCK</span>
                   </div>
                   <div className="flex justify-between">
                     <span className="text-white/70">Network:</span>

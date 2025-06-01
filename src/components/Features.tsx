@@ -17,7 +17,7 @@ const Features = () => {
     {
       icon: Users,
       title: "Strong Community",
-      description: "Join thousands of CrocElephant lovers in our vibrant community!"
+      description: "Join thousands of ELECROCK lovers in our vibrant community!"
     },
     {
       icon: Rocket,
@@ -31,7 +31,7 @@ const Features = () => {
       <div className="container mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-5xl font-bold text-white mb-6">
-            Why Choose CrocElephant?
+            Why Choose ELECROCK?
           </h2>
           <p className="text-xl text-white/80 max-w-2xl mx-auto">
             More than just a meme coin - we're building a community of elephant lovers who believe in fun, friendship, and financial freedom!

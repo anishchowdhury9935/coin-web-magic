@@ -7,7 +7,7 @@ import { Coins, Users, TrendingUp, Twitter, Send, MessageCircle, Copy, ExternalL
 import { useToast } from "@/hooks/use-toast";
 import Hero from "@/components/Hero";
 import Features from "@/components/Features";
-import Tokenomics from "@/components/Tokenomics";
+// Removed Tokenomics import
 import Community from "@/components/Community";
 import Roadmap from "@/components/Roadmap";
 
@@ -15,7 +15,7 @@ const Index = () => {
   const { toast } = useToast();
   const [copied, setCopied] = useState(false);
   
-  const contractAddress = "0x1234567890abcdef1234567890abcdef12345678";
+  const contractAddress = "coming soon...";
   
   const copyToClipboard = () => {
     navigator.clipboard.writeText(contractAddress);
@@ -30,25 +30,35 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-purple-400 via-pink-500 to-red-500">
       {/* Navigation */}
-      <nav className="fixed top-0 w-full z-50 bg-white/10 backdrop-blur-md border-b border-white/20">
-        <div className="container mx-auto px-4 py-3 flex justify-between items-center">
-          <div className="flex items-center space-x-2">
-            <img 
-              src="/lovable-uploads/d4cf1ab2-021a-4c5b-82ce-3a825ce33bb6.png" 
-              alt="CrocElephant" 
-              className="w-10 h-10 rounded-full"
-            />
-            <span className="text-white font-bold text-xl">$CROCELEPHANT</span>
+      <nav className="fixed top-0 w-full z-50 bg-black/20 backdrop-blur-lg border-b border-white/10 shadow-lg">
+        <div className="container mx-auto px-4 py-4 flex justify-between items-center">
+          <div className="flex items-center space-x-3">
+            <div className="bg-gradient-to-r from-purple-500/30 to-pink-500/30 p-1.5 rounded-full border border-white/20">
+              <img 
+                src="/lovable-uploads/d4cf1ab2-021a-4c5b-82ce-3a825ce33bb6.png" 
+                alt="ELECROCK" 
+                className="w-10 h-10 rounded-full"
+              />
+            </div>
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 to-pink-500 font-bold text-xl">$ELECROCK</span>
           </div>
-          <div className="hidden md:flex space-x-6">
-            <a href="#about" className="text-white hover:text-yellow-300 transition-colors">About</a>
-            <a href="#tokenomics" className="text-white hover:text-yellow-300 transition-colors">Tokenomics</a>
-            <a href="#roadmap" className="text-white hover:text-yellow-300 transition-colors">Roadmap</a>
-            <a href="#community" className="text-white hover:text-yellow-300 transition-colors">Community</a>
+          <div className="hidden md:flex space-x-8">
+            <a href="#about" className="text-white hover:text-yellow-300 transition-colors font-medium relative group">
+              About
+              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-yellow-300 transition-all duration-300 group-hover:w-full"></span>
+            </a>
+            <a href="#roadmap" className="text-white hover:text-yellow-300 transition-colors font-medium relative group">
+              Roadmap
+              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-yellow-300 transition-all duration-300 group-hover:w-full"></span>
+            </a>
+            <a href="#community" className="text-white hover:text-yellow-300 transition-colors font-medium relative group">
+              Community
+              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-yellow-300 transition-all duration-300 group-hover:w-full"></span>
+            </a>
           </div>
           <Button 
             onClick={copyToClipboard}
-            className="bg-yellow-400 hover:bg-yellow-500 text-black font-semibold"
+            className="bg-gradient-to-r from-yellow-400 to-yellow-500 hover:from-yellow-500 hover:to-yellow-600 text-black font-semibold rounded-xl shadow-md hover:shadow-lg transition-all duration-300"
           >
             {copied ? "Copied!" : "Copy CA"}
           </Button>
@@ -81,11 +91,10 @@ const Index = () => {
       {/* Features Section */}
       <Features />
 
-      {/* Tokenomics Section */}
-      <Tokenomics />
-
+      {/* Tokenomics Section - Removed */}
+      
       {/* Roadmap Section */}
-      <Roadmap />
+      {/* <Roadmap /> */}
 
       {/* Community Section */}
       <Community />
@@ -96,10 +105,10 @@ const Index = () => {
           <div className="flex justify-center items-center space-x-2 mb-4">
             <img 
               src="/lovable-uploads/d4cf1ab2-021a-4c5b-82ce-3a825ce33bb6.png" 
-              alt="CrocElephant" 
+              alt="ELECROCK" 
               className="w-8 h-8 rounded-full"
             />
-            <span className="text-white font-bold">$CROCELEPHANT</span>
+            <span className="text-white font-bold">$ELECROCK</span>
           </div>
           <p className="text-white/70 mb-4">
             The cutest meme coin in the crypto jungle! 🐘👟
@@ -113,13 +122,13 @@ const Index = () => {
               <Send className="w-4 h-4 mr-2" />
               Telegram
             </Button>
-            <Button variant="ghost" size="sm" className="text-white hover:text-yellow-300">
+            {/* <Button variant="ghost" size="sm" className="text-white hover:text-yellow-300">
               <MessageCircle className="w-4 h-4 mr-2" />
               Discord
-            </Button>
+            </Button> */}
           </div>
           <p className="text-white/50 text-sm mt-4">
-            © 2024 CrocElephant. All rights reserved. This is a meme coin with no intrinsic value.
+            © 2024 ELECROCK. All rights reserved. This is a meme coin with no intrinsic value.
           </p>
         </div>
       </footer>
